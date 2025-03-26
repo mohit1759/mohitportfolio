@@ -62,8 +62,7 @@ export default function Page() {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
+                    className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </Button>
@@ -88,7 +87,7 @@ export default function Page() {
                     <span className="sr-only">Twitter</span>
                   </Button>
                 </Link>
-                <Link href="mohitsoni1759@gmail.com">
+                <Link href="mohitsoni93556555@gmail.com">
                   <Button
                     variant="outline"
                     size="icon"
@@ -176,7 +175,7 @@ export default function Page() {
             <TechStack />
           </div>
         </section>
-{/* 
+
         <section id="contact" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
@@ -186,7 +185,7 @@ export default function Page() {
               <ContactForm />
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
 
       <footer className="border-t bg-muted/40">
