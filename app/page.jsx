@@ -191,7 +191,7 @@ export default function Page() {
       <footer className="border-t bg-muted/40">
         <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center px-4 md:px-6">
           <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Mohit soni. All rights reserved.</p>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          {/* <nav className="sm:ml-auto flex gap-4 sm:gap-6">
             <Link
               className="text-sm hover:underline underline-offset-4 text-gray-500 hover:text-primary dark:text-gray-400"
               href="#"
@@ -204,7 +204,7 @@ export default function Page() {
             >
               Privacy
             </Link>
-          </nav>
+          </nav> */}
         </div>
       </footer>
 
