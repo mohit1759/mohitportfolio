@@ -14,7 +14,7 @@ export async function submitContactForm(formData) {
   // For demonstration purposes, we'll just return a success message
   // In a real application, you'd want to handle errors and validate inputs
   return {
-    message: "Thanks for your message, Rohit will get back to you soon!",
+    message: "Thanks for your message, Mohit will get back to you soon!",
   }
 }
 
