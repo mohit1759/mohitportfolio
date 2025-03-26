@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "MohitSoni.dev",
     images: [
       {
-        url: "/logo.png", // Your OG image
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Mohit Soni Portfolio",
@@ -27,7 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "MohitSoni.dev - Full Stack Developer",
     description: "Full stack developer portfolio showcasing projects and skills",
-    images: ["/logo.png"], // Your OG image
+    images: ["/logo.png"],
   },
 };
 
