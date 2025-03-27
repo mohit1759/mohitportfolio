@@ -87,7 +87,7 @@ export default function Page() {
                     <span className="sr-only">Twitter</span>
                   </Button>
                 </Link>
-                <Link href="mohitsoni93556555@gmail.com">
+                <Link href="mailto:mohitsoni93556555@gmail.com">
                   <Button
                     variant="outline"
                     size="icon"
