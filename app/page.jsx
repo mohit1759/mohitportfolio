@@ -73,7 +73,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="projects" className="py-3 md:py-6">
+        <section id="projects" className="py-3 md:py-6 lg:py-12">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -87,7 +87,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="blog" className="py-3 md:py-6">
+        <section id="blog" className="">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Latest Blog Posts</h2>
             <div className="grid gap-8 md:grid-cols-2">
@@ -99,7 +99,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="tech" className="py-3 md:py-6">
+        <section id="tech" className="py-3 md:py-6 lg:py-12">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Tech Stack</h2>
             <TechStack />
