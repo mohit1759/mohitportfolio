@@ -18,22 +18,12 @@ export default function Page() {
               Mohit.dev
             </span>
           </Link>
-
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <Link href="#about" className="transition-colors hover:text-primary">
-              About
-            </Link>
-            <Link href="#projects" className="transition-colors hover:text-primary">
-              Projects
-            </Link>
-            <Link href="#tech" className="transition-colors hover:text-primary">
-              Tech Stack
-            </Link>
-            <Link href="#contact" className="transition-colors hover:text-primary">
-              Contact
-            </Link>
+            <Link href="#about" className="transition-colors hover:text-primary">About</Link>
+            <Link href="#projects" className="transition-colors hover:text-primary">Projects</Link>
+            <Link href="#tech" className="transition-colors hover:text-primary">Tech Stack</Link>
+            <Link href="#contact" className="transition-colors hover:text-primary">Contact</Link>
           </nav>
-
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Button variant="outline" className="hidden md:inline-flex">
@@ -50,8 +40,7 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-3">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                  Full Stack Developer mohit</h1>
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Full Stack Developer</h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
                 </p>
@@ -103,31 +92,11 @@ export default function Page() {
 
         <section id="projects" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Projects
-            </h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="E-commerce Platform"
-                description="A full-stack e-commerce platform built with React.js, Mongodb, and AWS integration."
-                image="/1.png"
-                link="https://github.com/mohit1759"
-                tags={["React.js", "Mongodb", "AWS"]}
-              />
-              <ProjectCard
-                title="Agancy CRM"
-                description="A Full stack Agency CRM Built With Next.JS And MySQL"
-                image="/2.png"
-                link="https://github.com/mohit1759"
-                tags={["React", "Node.js", "Socket.io"]}
-              />
-              <ProjectCard
-                title="Web3 NFT Minting"
-                description="A Web3 NFT Minting Platform using Next.js , Soledity , Opensea and Metamask Wallet"
-                image="/3.png"
-                link="https://github.com/mohit1759"
-                tags={["Soledity", "Next.js", "TailwindCSS" , "Metamask" , "Opensea"]}
-              />
+              <ProjectCard title="E-commerce Platform" description="A full-stack e-commerce platform built with React.js, Mongodb, and AWS integration." image="/1.png" link="https://www.marriagecounselorgurgaon.com/" tags={["React.js", "Mongodb", "AWS"]}/>
+              <ProjectCard title="Agancy CRM" description="A Full stack Agency CRM Built With Next.JS And MySQL" image="/2.png" link="https://github.com/mohit1759" tags={["React", "Node.js", "Socket.io"]}/>
+              <ProjectCard title="Web3 NFT Minting" description="A Web3 NFT Minting Platform using Next.js , Soledity , Opensea and Metamask Wallet" image="/3.png" link="https://github.com/mohit1759" tags={["Soledity", "Next.js", "TailwindCSS" , "Metamask" , "Opensea"]}/>
             </div>
           </div>
         </section>
