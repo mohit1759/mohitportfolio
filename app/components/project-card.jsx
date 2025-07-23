@@ -34,9 +34,7 @@ export default function ProjectCard({ title, description, image, link, tags }) {
           target="_blank"
           className="inline-flex items-center gap-2 text-sm text-primary hover:underline group-hover:text-primary-foreground transition-colors"
         >
-          <Github className="h-4 w-4" />
-          Read More
-        </Link>
+          <Github className="h-4 w-4" />Read More</Link>
       </CardFooter>
     </Card>
   )
