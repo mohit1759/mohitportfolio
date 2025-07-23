@@ -14,7 +14,7 @@ export default function Page() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link className="p-4 flex items-center space-x-2" href="/">
-            <span className="font-bold text-xl bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+            <span className="font-bold text-xl text-blue-600">
               Mohit.dev
             </span>
           </Link>
@@ -83,16 +83,13 @@ export default function Page() {
             <ProjectCard title="LiveCure24 Healthcare Website" description="Developed a responsive healthcare service platform using Laravel PHP. Integrated appointment booking, dynamic service management, and implemented on-page SEO to boost online visibility." image="/2.png" link="https://www.livecure24.com/" tags={["Laravel", "PHP", "Healthcare", "Responsive Design", "SEO"]}/>
             <ProjectCard title="CorpPlace Business Solutions Website" description="Designed and developed a corporate solutions platform using Laravel PHP and Tailwind CSS. Delivered a clean, fully responsive UI with SEO optimization and modular architecture." image="/1.png" link="https://corpplace.com/" tags={["Laravel", "PHP", "Tailwind CSS", "Corporate", "Responsive Design",]}/>
             <ProjectCard title="Arabius Language Learning Platform" description="Built a responsive Arabic language learning website using WordPress. Integrated live tutoring features, placement tests, and ensured fast loading speeds with an intuitive user experience." image="/6.png" link="https://arabius.com/" tags={["WordPress", "EdTech", "Live Tutoring", "Responsive Design", "Performance"]}/>
-
-
-
             </div>
           </div>
         </section>
 
         <section id="blog" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Latest Blog Posts</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Latest Blog Posts</h2>
             <div className="grid gap-8 md:grid-cols-2">
               <BlogCard title="The Future of Web Development: WASM and Beyond" excerpt="Exploring how WebAssembly is changing the landscape of web development and what it means for the future of the industry." date="2024-03-01" slug="future-of-web-development"/>
               <BlogCard title="Mastering React Hooks: Advanced Patterns" excerpt="Dive deep into advanced React Hook patterns and learn how to write more efficient and maintainable React components." date="2024-02-15" slug="mastering-react-hooks"/>
@@ -104,7 +101,7 @@ export default function Page() {
 
         <section id="tech" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Tech Stack</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Tech Stack</h2>
             <TechStack />
           </div>
         </section>
@@ -112,7 +109,7 @@ export default function Page() {
         <section id="contact" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Get in Touch</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Get in Touch</h2>
               <ContactForm />
             </div>
           </div>
