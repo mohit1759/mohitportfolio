@@ -87,7 +87,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="blog" className="">
+        <section id="blog" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Latest Blog Posts</h2>
             <div className="grid gap-8 md:grid-cols-2">
