@@ -97,6 +97,14 @@ export default function Page() {
             <ProjectCard  title="Marriage Counselor Gurgaon Website"  description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits."  image="/1.png"  link="https://www.marriagecounselorgurgaon.com/"  tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}/>
             <ProjectCard  title="MindSoulBridge Website"  description="A responsive and SEO-friendly WordPress website created for a mental health and therapy services provider. Built with user-focused UI/UX, optimized loading performance, and strong on-page SEO implementation."  image="/2.png"  link="https://www.mindsoulbridge.com/"  tags={["WordPress", "Responsive Design", "SEO", "UI/UX"]}/>
             <ProjectCard title="RENcomm Corporate Website" description="Developed a professional WordPress website for RENcomm, showcasing their business services with mobile responsiveness, modern layout, and on-page SEO best practices for visibility and performance." image="/3.png" link="https://rencomm.net/" tags={["WordPress", "Corporate Website", "Responsive Design", "SEO"]}/>
+            <ProjectCard 
+  title="LiveCure24 Healthcare Website" 
+  description="Developed a responsive healthcare service platform using Laravel PHP. Integrated appointment booking, dynamic service management, and implemented on-page SEO to boost online visibility." 
+  image="/4.png" 
+  link="https://www.livecure24.com/" 
+  tags={["Laravel", "PHP", "Healthcare", "Responsive Design", "SEO"]}
+/>
+
             </div>
           </div>
         </section>
