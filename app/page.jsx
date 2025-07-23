@@ -89,7 +89,7 @@ export default function Page() {
     <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
       Latest Blog Posts
     </h2>
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 md:grid-cols-2">
       <BlogCard 
         title="The Future of Web Development: WASM and Beyond" 
         excerpt="Exploring how WebAssembly is changing the landscape of web development and what it means for the future of the industry." 
