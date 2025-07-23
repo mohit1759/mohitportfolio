@@ -54,7 +54,7 @@ export default function Page() {
                   Full Stack Developer
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
+                Hi, I'm Mohit Soni,khsdgfo;sdgi;; an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
                 </p>
               </div>
               <div className="flex space-x-4">
