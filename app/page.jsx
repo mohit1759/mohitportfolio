@@ -86,7 +86,7 @@ export default function Page() {
 
        <section id="blog" className="py-6 md:py-12 bg-gray-50 dark:bg-gray-900">
   <div className="container px-4 md:px-6">
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 text-blue-600">
       Latest Blog Posts
     </h2>
     <div className="grid gap-8 md:grid-cols-2">
