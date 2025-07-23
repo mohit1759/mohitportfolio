@@ -99,6 +99,9 @@ export default function Page() {
             <ProjectCard title="RENcomm Corporate Website" description="Developed a professional WordPress website for RENcomm, showcasing their business services with mobile responsiveness, modern layout, and on-page SEO best practices for visibility and performance." image="/3.png" link="https://rencomm.net/" tags={["WordPress", "Corporate Website", "Responsive Design", "SEO"]}/>
             <ProjectCard title="LiveCure24 Healthcare Website" description="Developed a responsive healthcare service platform using Laravel PHP. Integrated appointment booking, dynamic service management, and implemented on-page SEO to boost online visibility." image="/2.png" link="https://www.livecure24.com/" tags={["Laravel", "PHP", "Healthcare", "Responsive Design", "SEO"]}/>
             <ProjectCard title="CorpPlace Business Solutions Website" description="Designed and developed a corporate solutions platform using Laravel PHP and Tailwind CSS. Delivered a clean, fully responsive UI with SEO optimization and modular architecture." image="/1.png" link="https://corpplace.com/" tags={["Laravel", "PHP", "Tailwind CSS", "Corporate", "Responsive Design",]}/>
+            <ProjectCard title="Arabius Language Learning Platform" description="Built a responsive Arabic language learning website using WordPress. Integrated live tutoring features, placement tests, and ensured fast loading speeds with an intuitive user experience." image="/6.png" link="https://arabius.com/" tags={["WordPress", "EdTech", "Live Tutoring", "Responsive Design", "Performance"]}/>
+
+
 
             </div>
           </div>
