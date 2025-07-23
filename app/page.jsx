@@ -94,7 +94,13 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard title="E-commerce Platform" description="A full-stack e-commerce platform built with React.js, Mongodb, and AWS integration." image="/1.png" link="https://www.marriagecounselorgurgaon.com/" tags={["React.js", "Mongodb", "AWS"]}/>
+            <ProjectCard 
+              title="Marriage Counselor Gurgaon Website" 
+              description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits." 
+              image="/1.png" 
+              link="https://www.marriagecounselorgurgaon.com/" 
+              tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}
+            />
               <ProjectCard title="Agancy CRM" description="A Full stack Agency CRM Built With Next.JS And MySQL" image="/2.png" link="https://github.com/mohit1759" tags={["React", "Node.js", "Socket.io"]}/>
               <ProjectCard title="Web3 NFT Minting" description="A Web3 NFT Minting Platform using Next.js , Soledity , Opensea and Metamask Wallet" image="/3.png" link="https://github.com/mohit1759" tags={["Soledity", "Next.js", "TailwindCSS" , "Metamask" , "Opensea"]}/>
             </div>
@@ -103,9 +109,7 @@ export default function Page() {
 
         <section id="blog" className="py-3 md:py-6">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Latest Blog Posts
-            </h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Latest Blog Posts</h2>
             <div className="grid gap-8 md:grid-cols-2">
               <BlogCard
                 title="The Future of Web Development: WASM and Beyond"
