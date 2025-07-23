@@ -35,45 +35,11 @@ export default function MobileMenu() {
         </SheetHeader>
 
         <nav className="flex flex-col space-y-6 mt-10">
-          <Link
-            href="#about"
-            className="text-lg font-medium hover:text-primary transition-colors"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            href="#projects"
-            className="text-lg font-medium hover:text-primary transition-colors"
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#blog"
-            className="text-lg font-medium hover:text-primary transition-colors"
-            onClick={handleLinkClick}
-          >
-            Blog
-          </Link>
-          <Link
-            href="#tech"
-            className="text-lg font-medium hover:text-primary transition-colors"
-            onClick={handleLinkClick}
-          >
-            Tech Stack
-          </Link>
-
-          {/* ✅ Resume Link */}
-          <a
-            href="/http://localhost:3000/mohit-resume.pdf"
-            target=""
-            rel="noopener noreferrer"
-            className="inline-block w-full mt-4 px-4 py-2 bg-primary text-white text-center rounded-md hover:bg-primary/90 transition"
-            onClick={handleLinkClick}
-          >
-            Resume
-          </a>
+          <Link href="#about"className="text-lg font-medium hover:text-primary transition-colors"onClick={handleLinkClick}>About</Link>
+          <Link href="#projects"className="text-lg font-medium hover:text-primary transition-colors"onClick={handleLinkClick}>Projects</Link>
+          <Link href="#blog"className="text-lg font-medium hover:text-primary transition-colors"onClick={handleLinkClick}>Blog</Link>
+          <Link href="#tech"className="text-lg font-medium hover:text-primary transition-colors"onClick={handleLinkClick}>Tech Stack</Link>
+          <Link href="/http://localhost:3000/mohit-resume.pdf" className="inline-block w-full mt-4 px-4 py-2 bg-primary text-white text-center rounded-md hover:bg-primary/90 transition" onClick={handleLinkClick}>Resume</Link>
         </nav>
       </SheetContent>
     </Sheet>
