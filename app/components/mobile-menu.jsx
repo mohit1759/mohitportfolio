@@ -29,7 +29,7 @@ export default function MobileMenu() {
           <Link href="#blog" className="text-lg font-medium hover:text-primary transition-colors" onClick={handleLinkClick}> Blog</Link>
           <Link href="#tech" className="text-lg font-medium hover:text-primary transition-colors" onClick={handleLinkClick}>Tech Stack</Link>
          
-          <a href="/mohit-resume.pdf" target="_blank" rel="noopener noreferrer"className="inline-block w-full mt-4 px-4 py-2 bg-primary text-white text-center rounded-md hover:bg-primary/90 transition">Resume</a>
+          <a href="/http://localhost:3000/mohit-resume.pdf" target="_blank" rel="noopener noreferrer"className="inline-block w-full mt-4 px-4 py-2 bg-primary text-white text-center rounded-md hover:bg-primary/90 transition">Resume</a>
 
         </nav>
       </SheetContent>
