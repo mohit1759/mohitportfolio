@@ -14,7 +14,7 @@ export default function ProjectCard({ title, description, image, link, tags }) {
           className="object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <CardContent className="p-5">
+      <CardContent className="py-4">
         <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">{title}</h3>
         <p className="text-sm text-muted-foreground mb-4">{description}</p>
         <div className="flex flex-wrap gap-2">
@@ -28,7 +28,7 @@ export default function ProjectCard({ title, description, image, link, tags }) {
           ))}
         </div>
       </CardContent>
-      <CardFooter className="p-5 pt-0">
+      <CardFooter className="">
         <Link
           href={link}
           target="_blank"
