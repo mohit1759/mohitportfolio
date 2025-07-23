@@ -67,7 +67,7 @@ export default function MobileMenu() {
           {/* ✅ Resume Link */}
           <a
             href="/http://localhost:3000/mohit-resume.pdf"
-            target="_blank"
+            target=""
             rel="noopener noreferrer"
             className="inline-block w-full mt-4 px-4 py-2 bg-primary text-white text-center rounded-md hover:bg-primary/90 transition"
             onClick={handleLinkClick}
