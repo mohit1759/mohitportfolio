@@ -51,10 +51,9 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-3">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                  Full Stack Developer
-                </h1>
+                  Full Stack Developer mohit</h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Hi, I'm Mohit Soni,khsdgfo;sdgi;; an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
+                Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
                 </p>
               </div>
               <div className="flex space-x-4">
