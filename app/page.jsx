@@ -72,9 +72,23 @@ export default function Page() {
 
         <section id="projects" className="py-3 md:py-6 lg:py-12">
           <div className="container">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-12">Projectskkkkkkkkk</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <ProjectCard  title="Marriage Counselor Gurgaon Website"  description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits."  image="/projectimg/marriage.jpg"  link="https://www.marriagecounselorgurgaon.com/"  tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}/>
+           <a 
+              href="https://www.marriagecounselorgurgaon.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <ProjectCard  
+                title="Marriage Counselor Gurgaon Website"  
+                description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits."  
+                image="/projectimg/marriage.jpg"  
+                tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}
+              />
+            </a>
+
+
             <ProjectCard  title="MindSoulBridge Website"  description="A responsive and SEO-friendly WordPress website created for a mental health and therapy services provider. Built with user-focused UI/UX, optimized loading performance, and strong on-page SEO implementation."  image="/projectimg/mind.jpg"  link="https://www.mindsoulbridge.com/"  tags={["WordPress", "Responsive Design", "SEO", "UI/UX"]}/>
             <ProjectCard title="RENcomm Corporate Website" description="Developed a professional WordPress website for RENcomm, showcasing their business services with mobile responsiveness, modern layout, and on-page SEO best practices for visibility and performance." image="/projectimg/rencom.jpg" link="https://rencomm.net/" tags={["WordPress", "Corporate Website", "Responsive Design", "SEO"]}/>
             <ProjectCard title="LiveCure24 Healthcare Website" description="Developed a responsive healthcare service platform using Laravel PHP. Integrated appointment booking, dynamic service management, and implemented on-page SEO to boost online visibility." image="/projectimg/livecure.jpg" link="https://www.livecure24.com/" tags={["Laravel", "PHP", "Healthcare", "Responsive Design", "SEO"]}/>
