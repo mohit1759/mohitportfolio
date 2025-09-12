@@ -24,9 +24,16 @@ export default function Page() {
           </nav>
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button variant="outline" className="hidden md:inline-flex">
-              <a href="/" target="_blank">Resume</a>
-            </Button>
+           <Button variant="outline" className="hidden md:inline-flex">
+          <a
+            href="https://docs.google.com/document/d/1R7qdHEH-orlh2CugtrbpeiH3N3L8vWFg/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </Button>
+
             <MobileMenu />
           </div>
         </div>
@@ -75,7 +82,6 @@ export default function Page() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard  title="Marriage Counselor Gurgaon Website"  description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits."  image="/projectimg/marriage.jpg"  link="https://www.marriagecounselorgurgaon.com/"  tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}/>
-              
               <ProjectCard  title="MindSoulBridge Website"  description="A responsive and SEO-friendly WordPress website created for a mental health and therapy services provider. Built with user-focused UI/UX, optimized loading performance, and strong on-page SEO implementation."  image="/projectimg/mind.jpg"  link="https://www.mindsoulbridge.com/"  tags={["WordPress", "Responsive Design", "SEO", "UI/UX"]}/>
               <ProjectCard title="RENcomm Corporate Website" description="Developed a professional WordPress website for RENcomm, showcasing their business services with mobile responsiveness, modern layout, and on-page SEO best practices for visibility and performance." image="/projectimg/rencom.jpg" link="https://rencomm.net/" tags={["WordPress", "Corporate Website", "Responsive Design", "SEO"]}/>
               <ProjectCard title="LiveCure24 Healthcare Website" description="Developed a responsive healthcare service platform using Laravel PHP. Integrated appointment booking, dynamic service management, and implemented on-page SEO to boost online visibility." image="/projectimg/livecure.jpg" link="https://www.livecure24.com/" tags={["Laravel", "PHP", "Healthcare", "Responsive Design", "SEO"]}/>
@@ -94,8 +100,8 @@ export default function Page() {
             <BlogCard title="Building Scalable Microservices with Node.js" excerpt="A comprehensive guide to designing and implementing scalable microservices architecture using Node.js and Docker." date="2024-01-30" slug="scalable-microservices-nodejs" />
             <BlogCard title="The Rise of JAMstack: Revolutionizing Web Development" excerpt="Discover how JAMstack architecture is changing the way we build and deploy web applications for better performance and security." date="2024-01-15" slug="rise-of-jamstack" />
           </div>
-        </div>
-      </section>
+         </div>
+        </section>
 
         <section id="tech" className="py-3 md:py-6 lg:py-12">
           <div className="container px-4 md:px-6">
