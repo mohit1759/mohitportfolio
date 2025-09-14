@@ -8,9 +8,8 @@ import { ThemeToggle } from "@/components/theme-toggle"
 export default function AboutPage() {
   return (
     <div className=" bg-background relative overflow-hidden">
-      
-      <header className=" container sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container grid grid-cols-1 md:grid-cols-3 items-center px-6 md:px-12">
           <Link className="p-4 flex items-center space-x-2" href="/">
             <img
               src="/mohit-profile-pic.jpeg"
@@ -20,15 +19,27 @@ export default function AboutPage() {
             <span className="font-bold text-xl text-blue-600">MOHIT SONI</span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <Link href="/about" className="transition-colors hover:text-primary">About</Link>
-            <Link href="#projects" className="transition-colors hover:text-primary">Projects</Link>
-            <Link href="#experience" className="transition-colors hover:text-primary">Experience</Link>
-            <Link href="#tech" className="transition-colors hover:text-primary">Tech Stack</Link>
-            <Link href="#contact" className="transition-colors hover:text-primary">Contact</Link>
+          {/* Center Nav */}
+          <nav className="hidden md:flex items-center justify-center space-x-8 text-sm font-medium">
+            <Link href="/about" className="transition-colors hover:text-primary">
+              About
+            </Link>
+            <Link href="#projects" className="transition-colors hover:text-primary">
+              Projects
+            </Link>
+            <Link href="#experience" className="transition-colors hover:text-primary">
+              Experience
+            </Link>
+            <Link href="#tech" className="transition-colors hover:text-primary">
+              Tech Stack
+            </Link>
+            <Link href="#contact" className="transition-colors hover:text-primary">
+              Contact
+            </Link>
           </nav>
 
-          <div className="flex items-center space-x-4">
+          {/* Right Resume + Toggle */}
+          <div className="flex items-center justify-end space-x-4">
             <ThemeToggle />
             <Button variant="outline" className="hidden md:inline-flex">
               <a
@@ -41,6 +52,7 @@ export default function AboutPage() {
             </Button>
           </div>
         </div>
+
       </header>
 
       {/* ===== HERO / INTRO ===== */}
