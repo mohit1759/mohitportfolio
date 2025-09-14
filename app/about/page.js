@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Mail,Twitter, ArrowUp } from "lucide-react"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
 
@@ -10,12 +10,8 @@ export default function AboutPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link className="p-4 flex items-center space-x-2" href="/">
-            <img
-              src="/sohil-profile-pic.png"
-              alt="Sohil Khan Profile Picture"
-              className="w-10 h-10 rounded-full object-cover"
-            />
-            <span className="font-bold text-xl text-blue-600">SOHIL KHAN</span>
+            <img src="/mohit-profile-pic.jpeg" alt="Mohit Soni Profile Picture" className="w-10 h-10 rounded-full object-cover"/>
+            <span className="font-bold text-xl text-blue-600">MOHIT SONI</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
@@ -54,44 +50,31 @@ export default function AboutPage() {
               </div>
               
               <div className="flex-1 space-y-4">
-                <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">
-                  MERN STACK DEVELOPER
-                </h1>
+                <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">Full Stack Developer</h1>
                 <p className="mx-auto md:mx-0 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Hi, I'm <span className="font-semibold text-blue-600">SOHIL KHAN</span>, an aspiring MERN Stack Developer with a passion for
-                  building robust, scalable, and user-friendly web applications.  
-                  I thrive on creating dynamic and responsive solutions and am seeking opportunities to
-                  leverage my expertise and grow within the web development industry.
-                </p>
+                  Hi, I'm <span className="font-semibold text-blue-600">MOHIT SONI</span>, an aspiring MERN Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.</p>
                 <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                  <Link href="https://github.com/Sohilkhan0021" target="_blank">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
-                    >
+                  <Link href="https://github.com/mohit1759" target="_blank">
+                    <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </Link>
 
-                  <Link href="https://www.linkedin.com/in/sohil-khan-14b071227/overlay/contact-info/" target="_blank">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
-                    >
+                  <Link href="https://www.linkedin.com/in/mohitsoni01/" target="_blank">
+                    <Button variant="outline"size="icon"className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
                     </Button>
                   </Link>
-
-                  <Link href="mailto:sohil0021khan@gmail.com">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
-                    >
+                  <Link href="/" target="_blank">
+                    <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
+                      <Twitter className="h-5 w-5" />
+                      <span className="sr-only">Twitter</span>
+                    </Button>
+                  </Link>
+                  <Link href="mailto:mohitsoni93556555@gmail.com">
+                    <Button variant="outline"size="icon"className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                       <Mail className="h-5 w-5" />
                       <span className="sr-only">Email</span>
                     </Button>
@@ -102,32 +85,74 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="mt-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-8 text-center">
-            Education
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2 mx-auto w-[85vw] flex">
-        
-            <div className="p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-              <h3 className="text-xl font-semibold text-blue-600">B.Tech in Computer Science Engineering</h3>
-              <p className="text-gray-600 dark:text-gray-300">Engineering College Bikaner | Bikaner Technical University (2021 - 2025)</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">CGPA: 8.3</p>
-              <Link href="https://drive.google.com/file/d/11o3hk6WdN0LX0-9s_qHxjm9MSi-hb1kh/view?usp=sharing" target="_blank" className="text-primary underline mt-2 inline-block">View Certificate</Link>
-            </div>
-          
-            <div className="p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-              <h3 className="text-xl font-semibold text-blue-600">Senior Secondary (12th)</h3>
-              <p className="text-gray-600 dark:text-gray-300">Govt. Sr. Sec. School, Chandoli, Alwar (Rajasthan)</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">Percentage: 84%</p>
-            </div>
-       
-            <div className="p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-              <h3 className="text-xl font-semibold text-blue-600">Secondary (10th)</h3>
-              <p className="text-gray-600 dark:text-gray-300">Govt. Sr. Sec. School, Chandoli, Alwar (Rajasthan)</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">Percentage: 77.50%</p>
-            </div>
-          </div>
-        </section>
+        <section className="mt-16 relative">
+  <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-12 text-center relative">
+    Education
+    <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-2 rounded-full"></span>
+  </h2>
+
+  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[90%] relative">
+    
+    {/* Card 1 */}
+    <div className="p-6 rounded-xl shadow-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+                    transform hover:scale-105 hover:shadow-2xl transition duration-300">
+      <div className="flex items-center gap-3 mb-4">
+        <span className="p-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
+          🎓
+        </span>
+        <h3 className="text-xl font-semibold text-blue-600">
+          Bachelor of Computer Applications (BCA)
+        </h3>
+      </div>
+      <p className="text-gray-600 dark:text-gray-300">
+        Kurukshetra University (2017 - 2021)
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="p-6 rounded-xl shadow-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+                    transform hover:scale-105 hover:shadow-2xl transition duration-300">
+      <div className="flex items-center gap-3 mb-4">
+        <span className="p-3 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white">
+          💻
+        </span>
+        <h3 className="text-xl font-semibold text-blue-600">
+          Digital Marketing Course
+        </h3>
+      </div>
+      <p className="text-gray-600 dark:text-gray-300">
+        IT Training Classes, Gurugram (01/2023 - 07/2023)
+      </p>
+      <p className="text-gray-500 dark:text-gray-400 mt-2">
+        Specialization: SEO, SMO, Paid Ads
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="p-6 rounded-xl shadow-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+                    transform hover:scale-105 hover:shadow-2xl transition duration-300">
+      <div className="flex items-center gap-3 mb-4">
+        <span className="p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+          🚀
+        </span>
+        <h3 className="text-xl font-semibold text-blue-600">
+          Web Designing Course
+        </h3>
+      </div>
+      <p className="text-gray-600 dark:text-gray-300">
+        IT Training Classes, Gurugram (07/2023 - 08/2024)
+      </p>
+      <p className="text-gray-500 dark:text-gray-400 mt-2">
+        Specialization: Full Stack Development
+      </p>
+    </div>
+  </div>
+
+  {/* Decorative Background Gradient */}
+  <div className="absolute -z-10 top-0 left-0 w-full h-full bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 opacity-60"></div>
+</section>
+
+
 
         <section className="mt-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-8 text-center">
@@ -150,7 +175,7 @@ export default function AboutPage() {
 
        <footer className="border-t bg-muted/40 mt-10 ">
         <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center px-4 md:px-6">
-          <p className="text-sm text-gray-500 dark:text-gray-400 ">© 2024 SOHIL KHAN. All rights reserved.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 ">© 2024 Mohit Soni. All rights reserved.</p>
         </div>
       </footer>
     </div>
