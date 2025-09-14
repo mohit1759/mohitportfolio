@@ -13,8 +13,9 @@ export default function Page() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link className="p-4 flex items-center space-x-2" href="/">
-            <span className="font-bold text-xl text-blue-600">Mohit.dev</span>
+            <Link className="p-4 flex items-center space-x-2" href="/">
+            <img src="/mohit-profile-pic.jpeg" alt="Mohit Profile Picture" className="w-12 h-12 rounded-full object-cover" />
+            <span className="font-bold text-xl text-blue-600">MOHIT SONI</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             <Link href="#about" className="transition-colors hover:text-primary">About</Link>
@@ -25,15 +26,8 @@ export default function Page() {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
            <Button variant="outline" className="hidden md:inline-flex">
-          <a
-            href="https://docs.google.com/document/d/1R7qdHEH-orlh2CugtrbpeiH3N3L8vWFg/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
-        </Button>
-
+             <a href="https://docs.google.com/document/d/1R7qdHEH-orlh2CugtrbpeiH3N3L8vWFg/edit" target="_blank" rel="noopener noreferrer">Resume</a>
+           </Button>
             <MobileMenu />
           </div>
         </div>

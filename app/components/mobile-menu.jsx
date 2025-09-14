@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+
 import {
   Sheet,
   SheetContent,
@@ -29,9 +31,13 @@ export default function MobileMenu() {
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] sm:w-[400px]">
         <SheetHeader>
-          <SheetTitle className="text-left text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+          <div className="flex">
+              <Image src="/projectimg/mind.jpg" alt="" fill className="w-30 h-30"/>
+            <SheetTitle className="text-left text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
             Mohit.dev
           </SheetTitle>
+            
+          </div>
         </SheetHeader>
 
         <nav className="flex flex-col space-y-6 mt-10">
