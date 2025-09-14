@@ -66,7 +66,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section id="education" className="relative">
+      <section id="education" className="mt-5 relative">
         <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-12 text-center">Education
           <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-2 rounded-full"></span>
         </h2>
