@@ -108,7 +108,7 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-      <section className="mt-20">
+      {/* <section className="mt-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-8 text-center">Certificates</h2>
         <div className="grid gap-8 md:grid-cols-2 mx-auto w-[85vw]">
           <div className="p-6 rounded-xl shadow-md bg-white dark:bg-gray-800 hover:shadow-2xl transition">
@@ -126,7 +126,7 @@ export default function AboutPage() {
             <Link href="https://drive.google.com/file/d/11o3hk6WdN0LX0-9s_qHxjm9MSi-hb1kh/view?usp=sharing" target="_blank" className="text-primary underline mt-2 inline-block">View Certificate</Link>
           </div>
         </div>
-      </section>
+      </section> */}
       <footer className="border-t bg-muted/40 mt-16">
         <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center justify-between">
           <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Mohit Soni. All rights reserved.</p>
