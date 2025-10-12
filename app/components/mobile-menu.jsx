@@ -33,13 +33,7 @@ export default function MobileMenu() {
           {/* Small logo + title; removed `fill` to prevent overlay */}
           <div className="flex items-center gap-3">
             {/* optional: remove Image completely if you don't want any image */}
-            <Image
-              src="/projectimg/mind.jpg"
-              alt="Mohit.dev logo"
-              width={32}
-              height={32}
-              className="rounded-md"
-            />
+            <img src="/mohit-profile-pic.jpeg" alt="Mohit Soni Profile Picture" className="w-10 h-10 rounded-full object-cover"/>
             <SheetTitle className="text-left text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Mohit.dev</SheetTitle>
           </div>
         </SheetHeader>
