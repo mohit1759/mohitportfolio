@@ -29,7 +29,7 @@ export default function AboutPage() {
           </div>
         </div>
       </header>
-      <section className="relative py-20 md:py-28 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+      <section className="relative py-6 md:py-12 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
         <div className="container flex flex-col md:flex-row items-center gap-6 px-6 md:px-12">
           <div className="flex-1 text-center md:text-left ">
             <h1 className="text-5xl md:text-6xl font-bold text-blue-600 leading-tight">Hi, I'm <span className="text-purple-600">Mohit Soni</span></h1>
