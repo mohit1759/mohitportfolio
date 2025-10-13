@@ -33,12 +33,13 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="container px-4 md:px-6">
-        <section id="about" className="py-3 md:py-6 lg:py-12">
-          <div className="container px-4 md:px-6">
+        <section id="about" className="">
+          <div className="container mx-auto py-3 md:py-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-3">
-                <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">Full Stack Developer</h1>
+                <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">Full Stack Developer
+                 <span className="block w-auto h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
+                </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.</p>
               </div>
               <div className="flex space-x-4">
@@ -71,9 +72,9 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="projects" className="py-3 md:py-6 lg:py-12">
-          <div className="container">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
+        <section id="projects">
+          <div className="py-2 md:py-4 container mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-5 md:mb-12">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard  title="Marriage Counselor Gurgaon Website"  description="A fully responsive and SEO-optimized WordPress website developed for a professional marriage counseling service. The site includes custom layouts, optimized performance, and on-page SEO with a 100/100 score in Lighthouse audits."  image="/projectimg/marriage.jpg"  link="https://www.marriagecounselorgurgaon.com/"  tags={["WordPress", "Responsive Design", "On-Page SEO", "Custom Theme"]}/>
               <ProjectCard  title="MindSoulBridge Website"  description="A responsive and SEO-friendly WordPress website created for a mental health and therapy services provider. Built with user-focused UI/UX, optimized loading performance, and strong on-page SEO implementation."  image="/projectimg/mind.jpg"  link="https://www.mindsoulbridge.com/"  tags={["WordPress", "Responsive Design", "SEO", "UI/UX"]}/>
@@ -85,9 +86,9 @@ export default function Page() {
           </div>
         </section>
 
-       <section id="blog" className="py-6 md:py-12 bg-gray-50 dark:bg-gray-900">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 text-blue-600">Latest Blog Posts</h2>
+       <section id="blog" className=" bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto py-3 md:py-6 lg:py-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 md:mb-12 text-blue-600">Latest Blog Posts</h2>
           <div className="grid gap-8 md:grid-cols-2">
             <BlogCard title="The Future of Web Development: WASM and Beyond" excerpt="Exploring how WebAssembly is changing the landscape of web development and what it means for the future of the industry." date="2024-03-01" slug="future-of-web-development" />
             <BlogCard title="Mastering React Hooks: Advanced Patterns" excerpt="Dive deep into advanced React Hook patterns and learn how to write more efficient and maintainable React components." date="2024-02-15" slug="mastering-react-hooks" />
@@ -97,22 +98,23 @@ export default function Page() {
          </div>
         </section>
 
-        <section id="tech" className="py-3 md:py-6 lg:py-12">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Tech Stack</h2>
+        <section id="tech">
+          <div className="container mx-auto py-3 md:py-6 lg:py-12">
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-4 md:mb-10 text-center text-blue-600">Tech Stack
+             <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
+            </h2>
             <TechStack />
           </div>
         </section>
 
         <section id="contact" className="py-3 md:py-6">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="mx-auto max-w-2xl">
               <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center text-blue-600">Get in Touch</h2>
               <ContactForm />
             </div>
           </div>
         </section>
-      </main>
 
       <footer className="border-t bg-muted/40">
         <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center px-4 md:px-6">

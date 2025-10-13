@@ -30,14 +30,11 @@ export default function AboutPage() {
         </div>
       </header>
       <section className="relative py-6 md:py-12 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
-        <div className="container flex flex-col md:flex-row items-center gap-6 px-6 md:px-12">
+        <div className="container w-[90%] mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="flex-1 text-center md:text-left ">
             <h1 className="text-5xl md:text-6xl font-bold text-blue-600 leading-tight">Hi, I'm <span className="text-purple-600">Mohit Soni</span></h1>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-xl">
-              A passionate <span className="font-semibold text-blue-600">Full Stack Developer</span> specialized in building scalable, user-friendly, and dynamic web applications. I bring creative problem-solving, clean design, and robust development practices together.
-            </p>
-
-            <div className="flex justify-center md:justify-start space-x-4 mt-6">
+            <p className="py-2 md:py-4 text-lg text-gray-600 dark:text-gray-400 max-w-xl">A passionate <span className="font-semibold text-blue-600">Full Stack Developer</span> specialized in building scalable, user-friendly, and dynamic web applications. I bring creative problem-solving, clean design, and robust development practices together.</p>
+            <div className="flex justify-center md:justify-start space-x-4 mt-2">
               <Link href="https://github.com/mohit1759" target="_blank">
                 <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-white transition-all">
                   <Github className="h-5 w-5" />
@@ -66,12 +63,12 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section id="education" className="mt-5 relative">
+      <section id="education" className="py-6 md:py-12 container w-[90%] mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-12 text-center">Education
-          <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-2 rounded-full"></span>
+          <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[90%] relative">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
               icon: <GraduationCap className="h-6 w-6" />,
@@ -109,10 +106,9 @@ export default function AboutPage() {
         </div>
       </section>
    
-      <footer className="border-t bg-muted/40 mt-16">
-        <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center justify-between">
-          <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Mohit Soni. All rights reserved.</p>
-          <BackToTopButton />
+      <footer className="border-t bg-muted/40">
+        <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center px-4 md:px-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Mohit soni. All rights reserved.</p>
         </div>
       </footer>
     </div>

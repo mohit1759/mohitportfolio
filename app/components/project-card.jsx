@@ -11,8 +11,8 @@ export default function ProjectCard({ title, description, image, link, tags }) {
         </Link>
       </div>
       <CardContent className="py-4 flex-1">
-        <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">{title}</h3>
-        <p className="text-sm text-muted-foreground mb-4">{description}</p>
+        <h3 className="font-semibold text-xl  group-hover:text-primary transition-colors">{title}</h3>
+        <p className="text-sm text-muted-foreground py-2 md:py-5">{description}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span key={tag} className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20 transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
