@@ -40,7 +40,7 @@ export default function Page() {
                 <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">Full Stack Developer
                  <span className="block w-auto h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 p-1">Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.</p>
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 p-2">Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.</p>
               </div>
               <div className="flex space-x-4">
                 <Link href="https://github.com/mohit1759" target="_blank">
