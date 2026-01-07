@@ -115,7 +115,7 @@ export default function Page() {
 
       {/* Projects with View More */}
       <section id="projects">
-        <div className="py-2 md:py-4 container mx-auto">
+        <div className="py-2 md:py-4 container px-2 md:px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-5 md:mb-12">Projects</h2>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
