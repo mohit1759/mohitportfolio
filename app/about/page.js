@@ -78,13 +78,13 @@ export default function AboutPage() {
             {
               icon: <Award className="h-6 w-6" />,
               title: "Digital Marketing Course",
-              place: "IT Training Classes, Gurugram (01/2023 - 07/2023)",
+              place: "IT Training Classes, Gurugram (08/2022 - 02/2023)",
               note: "Specialization: SEO, SMO, Paid Ads"
             },
             {
               icon: <Code2 className="h-6 w-6" />,
               title: "Web Designing Course",
-              place: "IT Training Classes, Gurugram (07/2023 - 08/2024)",
+              place: "IT Training Classes, Gurugram (03/2023 - 03/2024)",
               note: "Specialization: Full Stack Development"
             }
           ].map((edu, i) => (
