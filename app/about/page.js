@@ -4,31 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Twitter, ArrowUp, Code2, Briefcase, Award, GraduationCap } from "lucide-react"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
+import Header from "../components/header"
 
 export default function AboutPage() {
   return (
     <div className=" bg-background relative overflow-hidden">
-      <header className="container sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container grid grid-cols-1 md:grid-cols-3 items-center px-4 md:px-8">
-          <Link className="p-4 flex items-center space-x-2" href="/">
-            <img src="/mohit-profile-pic.jpeg"alt="Mohit Soni Profile Picture"className="w-10 h-10 rounded-full object-cover"/>
-            <span className="font-bold text-xl text-blue-600">MOHIT SONI</span>
-          </Link>
-          <nav className="hidden md:flex items-center justify-center space-x-8 text-sm font-medium">
-            <Link href="/about" className="transition-colors hover:text-primary">About</Link>
-            <Link href="#projects" className="transition-colors hover:text-primary">Projects</Link>
-            <Link href="#experience" className="transition-colors hover:text-primary">Experience</Link>
-            <Link href="#tech" className="transition-colors hover:text-primary">Tech Stack</Link>
-            <Link href="#contact" className="transition-colors hover:text-primary">Contact</Link>
-          </nav>
-          <div className="flex items-center justify-end space-x-4">
-            <ThemeToggle />
-            <Button variant="outline" className="hidden md:inline-flex">
-              <a href="https://drive.google.com/file/d/1EA_OG_VBrYy4O-RS4r5VejTK7Npm6WOh/view?usp=sharing"target="_blank"rel="noopener noreferrer">Resume</a>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Header />
       <section className="relative py-6 md:py-12 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
         <div className="container w-[90%] mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="flex-1 text-center md:text-left ">

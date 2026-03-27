@@ -6,10 +6,14 @@ import { Github, Linkedin, Mail, Twitter, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import ContactForm from "./components/contact-form";
+import AllProjects from "./components/all-project";
 import ProjectCard from "./components/project-card";
-import BlogCard from "./components/blog-card";
-import TechStack from "./components/tech-stack";
+import BlogSection from "./components/blog-section";
+import TechSection from "./components/tech-section";
 import MobileMenu from "./components/mobile-menu";
+import Header from "./components/header";
+import HeroSection from "./components/hero-section";
+import Footer from "./components/footer";
 
 
 const PROJECTS = [
@@ -41,126 +45,16 @@ const PROJECTS = [
 ];
 
 export default function Page() {
-  const [expanded, setExpanded] = useState(false);
-  const initialCount = 6;
-  const visible = useMemo(
-    () => (expanded ? PROJECTS : PROJECTS.slice(0, initialCount)),
-    [expanded]
-  );
-  const hasMore = PROJECTS.length > initialCount;
+  // NOTE: project list state and paging now lives in AllProjects
+  // (No need for local expanded/visible/hasMore in this file anymore).
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link className="p-4 flex items-center space-x-2" href="/">
-            <img src="/mohit-profile-pic.jpeg"alt="Mohit Soni Profile Picture"className="w-10 h-10 rounded-full object-cover"/>
-            <span className="font-bold text-xl text-blue-600">MOHIT SONI</span>
-          </Link>
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <Link href="/about" className="transition-colors hover:text-primary">About</Link>
-            <Link href="#projects" className="transition-colors hover:text-primary">Projects</Link>
-            <Link href="#tech" className="transition-colors hover:text-primary">Tech Stack</Link>
-            <Link href="#contact" className="transition-colors hover:text-primary">Contact</Link>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <ThemeToggle />
-            <Button variant="outline" className="hidden md:inline-flex">
-              <a href="https://docs.google.com/document/d/1R7qdHEH-orlh2CugtrbpeiH3N3L8vWFg/edit" target="_blank" rel="noopener noreferrer">Resume</a>
-            </Button>
-            <MobileMenu />
-          </div>
-        </div>
-      </header>
-
-      <section id="about" className="">
-        <div className="container mx-auto py-3 md:py-6">
-          <div className="flex flex-col items-center justify-center space-y-6 text-center">
-            <div className="space-y-3">
-              <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">Full Stack Developer
-                <span className="block w-auto h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
-              </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 p-2"> Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
-              </p>
-            </div>
-            <div className="flex space-x-4">
-              <Link href="https://github.com/mohit1759" target="_blank">
-                <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Button>
-              </Link>
-              <Link href="https://www.linkedin.com/in/mohitsoni01/" target="_blank">
-                <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
-              </Link>
-              <Link href="/" target="_blank">
-                <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Button>
-              </Link>
-              <Link href="mailto:mohitsoni93556555@gmail.com">
-                <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                  <Mail className="h-5 w-5" />
-                  <span className="sr-only">Email</span>
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects with View More */}
-      <section id="projects">
-        <div className="py-2 md:py-4 container px-2 md:px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-5 md:mb-12">Projects</h2>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {visible.map((p) => (
-              <ProjectCard
-                key={p.title}
-                title={p.title}
-                description={p.description}
-                image={p.image}
-                link={p.link}
-                tags={p.tags}
-              />
-            ))}
-          </div>
-
-          {hasMore && (
-            <div className="mt-8 flex justify-center">
-              <button type="button" className="relative px-6 py-2 rounded-lg font-bold text-white bg-blue-600 hover:shadow-[0_8px_15px_rgba(0,0,0,0.4)] hover:brightness-110 active:translate-y-1 active:shadow-[0_3px_0_0_rgba(0,0,0,0.3)] transition-all duration-200 ease-in-out" onClick={() => setExpanded((s) => !s)} aria-expanded={expanded}>
-                {expanded ? "View less" : "View more"}
-              </button>
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section id="blog" className=" bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto py-3 md:py-6 lg:py-12 px-2 md:px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 md:mb-12 text-blue-600">Latest Blog Posts</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <BlogCard title="The Future of Web Development: WASM and Beyond" excerpt="Exploring how WebAssembly is changing the landscape of web development and what it means for the future of the industry." date="2024-03-01" slug="future-of-web-development"/>
-            <BlogCard title="Mastering React Hooks: Advanced Patterns" excerpt="Dive deep into advanced React Hook patterns and learn how to write more efficient and maintainable React components." date="2024-02-15" slug="mastering-react-hooks"/>
-            <BlogCard title="Building Scalable Microservices with Node.js" excerpt="A comprehensive guide to designing and implementing scalable microservices architecture using Node.js and Docker." date="2024-01-30" slug="scalable-microservices-nodejs"/>
-            <BlogCard title="The Rise of JAMstack: Revolutionizing Web Development" excerpt="Discover how JAMstack architecture is changing the way we build and deploy web applications for better performance and security." date="2024-01-15" slug="rise-of-jamstack"/>
-          </div>
-        </div>
-      </section>
-
-      <section id="tech">
-        <div className="container mx-auto py-3 md:py-6 lg:py-12">
-          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-4 md:mb-10 text-center text-blue-600">Tech Stack
-            <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
-          </h2>
-          <TechStack />
-        </div>
-      </section>
+      <Header />
+      <HeroSection />
+      <AllProjects projects={PROJECTS} />
+      <BlogSection />
+      <TechSection />
 
       <section id="contact" className="py-3 md:py-6">
         <div className="container mx-auto">
@@ -171,11 +65,7 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="border-t bg-muted/40">
-        <div className="container flex flex-col gap-4 sm:flex-row py-8 w-full items-center px-4 md:px-6">
-          <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Mohit soni. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
 
       <BackToTopButton />
     </div>
