@@ -14,7 +14,7 @@ export default function AllProjects({ projects }) {
 
   return (
     <section id="projects">
-      <div className="container mx-auto  items-center justify-between">
+      <div className="container p-1 mx-auto items-center justify-between">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-5 md:mb-12">Projects</h2>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

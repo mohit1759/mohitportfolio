@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Twitter, ArrowUp, Code2, Briefcase, Award, GraduationCap } from "lucide-react"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
-import Header from "../components/header"
+import Header from "../components/layout/header"
 
 export default function AboutPage() {
   return (

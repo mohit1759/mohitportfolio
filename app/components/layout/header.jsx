@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
-import MobileMenu from "./mobile-menu"
+import MobileMenu from "../mobile-menu"
 
 export default function Header() {
   return (

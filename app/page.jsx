@@ -11,9 +11,9 @@ import ProjectCard from "./components/project-card";
 import BlogSection from "./components/blog-section";
 import TechSection from "./components/tech-section";
 import MobileMenu from "./components/mobile-menu";
-import Header from "./components/header";
+import Header from "./components/layout/header";
 import HeroSection from "./components/hero-section";
-import Footer from "./components/footer";
+import Footer from "./components/layout/footer";
 
 
 const PROJECTS = [
