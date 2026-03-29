@@ -2,7 +2,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import AOSInit from "./aos-init"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <AOSInit />
           {children}
         </ThemeProvider>
         <SpeedInsights />

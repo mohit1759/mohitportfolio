@@ -26,6 +26,9 @@ export default function TechStack() {
         <Card
           key={tech.category}
           className="p-6 border border-border/40 hover:border-primary/20 transition-all hover:shadow-md"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="100"
         >
           <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
             {tech.category}

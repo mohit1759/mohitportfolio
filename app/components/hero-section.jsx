@@ -1,4 +1,4 @@
-"use client"
+  "use client"
 
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="">
       <div className="container mx-auto py-3 md:py-6">
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
-          <div className="space-y-3">
+          <div className="space-y-3" data-aos="fade-up" data-aos-delay="100">
             <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-blue-600">
               Full Stack Developer
               <span className="block w-auto h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
@@ -18,7 +18,7 @@ export default function HeroSection() {
               Hi, I'm Mohit Soni, an aspiring Full Stack Developer with a passion for building robust, scalable, and user-friendly web applications. I thrive on creating dynamic and responsive solutions and am seeking opportunities to leverage my expertise and grow within the web development industry.
             </p>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4" data-aos="fade-up" data-aos-delay="300">
             <Link href="https://github.com/mohit1759" target="_blank">
               <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                 <Github className="h-5 w-5" />

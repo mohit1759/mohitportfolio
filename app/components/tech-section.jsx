@@ -6,7 +6,7 @@ export default function TechSection() {
   return (
     <section id="tech">
       <div className="container mx-auto py-3 md:py-6 lg:py-12">
-        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-4 md:mb-10 text-center text-blue-600">
+        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-4 md:mb-10 text-center text-blue-600" data-aos="fade-up" data-aos-duration="700">
           Tech Stack
           <span className="block w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4 rounded-full"></span>
         </h2>
